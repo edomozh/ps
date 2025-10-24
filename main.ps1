@@ -74,6 +74,7 @@ process {
         ComputerName        = [System.Net.Dns]::GetHostName()
         EntraIdJoined       = $DsRegStatus.AzureADJoined
         DomainJoined        = $DsRegStatus.DomainJoined
+        DomainName          = $DsRegStatus.DomainName
         UserPrincipalName   = $IdentityStore.UserName
         UserAccountProvider = $IdentityStore.ProviderName
         LastLoggedOnUser    = $LastLoggedOnUser
